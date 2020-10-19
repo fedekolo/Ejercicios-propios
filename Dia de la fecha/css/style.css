@@ -1,0 +1,139 @@
+/* -----------CARACTERISTICAS GENERALES----------- */
+/* TIPO DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* NORMALIZADORES */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* COLORES BASE */
+:root {
+    --color-primary: #e0ece4;
+    --color-secondary: #f7f2e7;
+    --color-terciary: #797a7e;
+}
+
+/* FUENTES */
+.container-all {
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--color-terciary);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--color-terciary);
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--color-terciary);
+    font-style: oblique;
+}
+
+/* -----------VERSION DESKTOP----------- */
+
+.container-all {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--color-primary);
+}
+
+/* TEXTOS */
+.titulos h1 {
+    border-bottom: .5rem solid var(--color-secondary);
+    border-top: .5rem solid var(--color-secondary);
+}
+
+.titulos h2 {
+    margin-bottom: 0.2rem;
+}
+
+.titulos h3 {
+    margin-top: 0;
+}
+
+/* FORMULARIO */
+.formulario {
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+    .formulario form {
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+
+    .formulario form select,input {
+        width: 20%;
+        height: 3rem;
+        border-radius: .5rem;
+        outline: none;
+        border: 0;
+        box-shadow: .1rem .1rem rgba(128, 128, 128, 0.438);
+        background-color: var(--color-secondary);
+        color: var(--color-terciary);
+        font-family: 'Varela Round', sans-serif;
+        text-align: center;
+    }
+
+        /* eliminar flechas input number */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
+            appearance: none; 
+            margin: 0; 
+        } 
+
+    .formulario button {
+        margin-top: 1.5rem;
+        width: 12rem;
+        height: 2.5rem;
+        border-radius: .5rem;
+        border: 0;
+        box-shadow: .15rem .15rem rgba(128, 128, 128, 0.438);
+        background-color: var(--color-terciary);
+        color: var(--color-primary);
+        font-family: 'Varela Round', sans-serif;
+        font-size: 1.2rem;
+        outline: none;
+    }
+
+    .formulario button:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        opacity: .85;
+    }
+
+
+
+
+#contenedor-resultado {
+    width: 70vw;
+    height: 10rem;
+    background-color: var(--color-secondary);
+    border-radius: 2rem;
+    box-shadow: 0.3rem 0.5rem rgba(65, 64, 64, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
