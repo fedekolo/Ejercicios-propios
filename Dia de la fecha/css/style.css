@@ -20,6 +20,8 @@ body {
 /* FUENTES */
 .container-all {
     font-family: 'Varela Round', sans-serif;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -75,22 +77,27 @@ h3 {
 }
 
     .formulario form {
-        width: 50%;
+        width: auto;
         height: auto;
         margin: auto;
     }
 
     .formulario form select,input {
         width: 20%;
+        min-width: 7.5rem;
+        max-width: 9rem;
         height: 3rem;
         border-radius: .5rem;
         outline: none;
         border: 0;
-        box-shadow: .1rem .1rem rgba(128, 128, 128, 0.438);
+        box-shadow: .2rem .2rem .2rem rgba(128, 128, 128, 0.151);
         background-color: var(--color-secondary);
         color: var(--color-terciary);
         font-family: 'Varela Round', sans-serif;
-        text-align: center;
+    }
+
+    .formulario form select:focus,input:focus {
+        box-shadow: .2rem .2rem .2rem rgba(128, 128, 128, 0.411);
     }
 
         /* eliminar flechas input number */
@@ -108,7 +115,7 @@ h3 {
         height: 2.5rem;
         border-radius: .5rem;
         border: 0;
-        box-shadow: .15rem .15rem rgba(128, 128, 128, 0.438);
+        box-shadow: .2rem .2rem .2rem rgba(128, 128, 128, 0.322);
         background-color: var(--color-terciary);
         color: var(--color-primary);
         font-family: 'Varela Round', sans-serif;
@@ -120,6 +127,7 @@ h3 {
         cursor: pointer;
         transform: scale(1.05);
         opacity: .85;
+        box-shadow: .2rem .2rem .2rem rgba(128, 128, 128, 0.411);
     }
 
 #contenedor-resultado {
@@ -127,13 +135,61 @@ h3 {
     height: 10rem;
     background-color: var(--color-secondary);
     border-radius: 2rem;
-    box-shadow: 0.3rem 0.5rem rgba(65, 64, 64, 0.075);
+    box-shadow: .2rem .2rem .2rem rgba(128, 128, 128, 0.151);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 3rem;
+    padding: .4rem;
+}
+
+/* -----------VERSION MOBILE----------- */
+
+@media (max-width: 420px) {
+    
+    /* FUENTES */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: .9rem;
+    }
+
+    /* TEXTOS */
+    .titulos h3 {
+        margin-top: 1rem;
+    }
+
+    /* FORMULARIO */
+    .formulario {
+        margin: 1rem auto;
+    }
+
+        .formulario form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formulario form select,input {
+            margin: .2rem auto;
+        }
+
+    #contenedor-resultado {
+        width: 90vw;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        padding: .2rem;
+    }
+
+
 }
 
 
