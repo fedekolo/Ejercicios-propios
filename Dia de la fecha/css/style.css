@@ -94,6 +94,8 @@ h3 {
         background-color: var(--color-secondary);
         color: var(--color-terciary);
         font-family: 'Varela Round', sans-serif;
+        padding: .8rem;
+        box-sizing: border-box;
     }
 
     .formulario form select:focus,input:focus {
